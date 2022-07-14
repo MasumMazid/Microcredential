@@ -1,0 +1,120 @@
+*{box sizing order radius}
+
+.title{
+  font-family:Elephant;
+  font-style:italic;
+  font-size: 300%;
+}
+.intro{
+  font-size: 50px;
+}
+.subtitle{
+  font-size: .5em;
+}
+#name1{
+  text-shadow:-10px 0px 2px red
+}
+#name2{
+  text-shadow: 0px -10px 2px blue
+}
+#name3{
+  text-shadow:-10px -10px 2px red
+}
+#name4{
+  text-shadow:10px -10px 2px red
+}
+#name5{
+  text-shadow:10px 10px 5px red
+}
+.box1{
+  background-color: purple;height:100px;
+  width: 200px;box-shadow:  5px 5px 10px black;
+}
+.box2{
+  background-color: gray;height:100px;
+  width: 200px;box-shadow:  0px 0px 10px 10px black;
+}
+.box3{
+  background-color: yellow;height:100px;
+  width: 200px;box-shadow:  5px 5px 10px black;
+  margin-bottom: 50px;
+}
+.box4{
+  background-color: green;height:100px;
+  width: 200px;box-shadow:  5px 5px 10px black;
+  margin-left: 50px
+}
+.box5{
+  background-color: lightblue;height:100px;
+  width: 200px;box-shadow:  5px 5px 10px black;
+  margin: auto;
+}
+
+.box3,.box4,.box5,.box6,.box7,.box8,.box9{
+  height:100px;
+  width: 200px;
+}
+.box6{
+  background-color: lightgrey;height:100px;
+  width: 200px;box-shadow:  5px 5px 10px black;
+  margin-top: 50px;
+}
+.box7{
+  background-color: orange;
+  margin:100px;
+}
+.box8{
+  background-color: pink;
+  margin:100px 300px;
+}
+.box9{
+  background-color: green;
+  margin:200px 100px 300px 50px;
+}
+.p1{
+  padding-top: 50px;
+}
+.p2{
+  padding: 20px 100px;
+}.p3{
+  padding: 50px;
+}.p4{
+  padding: 50px;
+}
+.nature{
+  background-color:lightgreen; font-size: 300%; text-align:center;
+  padding: 20px 0px; text-shadow: 2px 2px 5px orange; margin:auto;
+  box-shadow:2px 2px 5px black;color:darkgreen;
+}
+.image_contatiner{
+  border:solid 1px red; width 90% margin:auto;
+}
+.image1,.image2,.image3,.image4{
+  width:100px;
+}
+.row1,.row2{
+  border:solid green;
+  border-left-width: thick;
+}
+.image1 {
+ border-radius: 20px;
+}
+.image2 {
+border-radius: 50%;
+}
+.image3 {
+ border: 10px dotted blue;
+ border-radius: 10px;
+ padding: 20px;
+ background-color: yellow;
+}
+.image4 {
+box-shadow: 0 0 10px 5px brown;
+}
+.pContent{
+border: solid yellow;
+width:30%;
+float:right;
+height: 100%;
+padding: 1em 2em;
+}
