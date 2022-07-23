@@ -1,0 +1,176 @@
+.box1 {
+
+  float: left;
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  animation: slider 5s infinite;
+}
+@keyframes slider {
+  0%{
+    transform: translateX(500px);
+    opacity:0;
+  }
+  30%{
+    transform: translateX(-55px);
+    opacity:1;
+  }
+  50%{
+    transform: translateX(-150px);
+    opacity:1;
+  }
+  70%{
+    transform: translateX(100px);
+    opacity:.6;
+  }
+  90%{
+    transform: translateX(150px);
+    opacity:1;
+  }
+  100%{
+    transform: translateX(-1550px);
+    opacity:0;
+  }
+}
+.box2{
+  display: inline-block;
+  border: 5px solid blue;
+  height: 400px;
+.zoosk{
+  width: 350px;
+  height: 350px;
+}
+}
+.p1{
+top:150px;
+left:10px;
+opacity: .8;
+}
+.one{
+bottom: 100px;
+right: 100px;
+margin: 0px;
+padding:0px;
+}
+.h2{
+  color: darkred;
+    letter-spacing: -.025em;
+    margin-bottom: 0.4em;
+    font: Papyrus;
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+}
+.h3{
+  color: lightgrey;
+    letter-spacing: -.05em;
+    margin-bottom: 1em;
+    font: Papyrus;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+    animation: rotate 2s infinite;
+    animation-timing-function:ease;
+}
+@keyframes rotate {
+  from {
+              transform: rotate(0deg);
+          } to {
+              transform: rotate(360deg);
+          }
+
+}
+.zoo{
+  background-color: RGB(100,255,155);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition:background-color 2s ease ;
+  position: absolute;
+right: 10px;
+top: 950px;
+}
+.zoo:hover{
+  background-color: RGB(255,0,255);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height:80px;
+  width: 220px;
+}
+.box3{
+  border: 5px solid darkgreen;
+  height: 400px;
+}
+.box4{
+  border: 5px solid darkred;
+  height: 400px;
+}
+
+.zoosk{
+  float: left;
+  width: 500px;
+  height: 250px;
+}
+.h4{
+  color: lightpink;
+  background-color: lightblue;
+    letter-spacing: -.05em;
+    margin-bottom: 1em;
+    font: Papyrus;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+    animation: size 10s infinite;
+    animation-timing-function:ease-in;
+    padding: 10px;
+}
+@keyframes size {
+  from {
+    transform: scaleX(1);
+    transform:scaleY(1);
+    box-shadow: 5px 5px 5px black;
+ }to {
+    transform: scaleX(2);
+    transform:scaleY(2);
+    box-shadow: 20px 20px 20px grey;
+    filter: blur(50px);
+}
+}
+.mine{
+  float: right;
+  width: 800px;
+  height: 250px;
+}
+.box{
+  text-align: left;
+  margin-right: 100px;
+
+}
+.email{
+  width:100px;
+  height: 50px;
+}
+.towns{
+  background-color: RGB(0,0,155);
+  border: none;
+  color: brown;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  transition:background-color 2s ease ;
+  position: absolute;
+left: 110px;
+top: 1750px;
+filter: blur(1px);
+}
