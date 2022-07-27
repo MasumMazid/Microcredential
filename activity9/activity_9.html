@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MASUM <br> MAZID</title>
+  </head>
+  <body>
+    <h1>MASUM MAZID </h1>
+    <script type="text/javascript">
+      let msg='This is an outside message'
+        function displayMsG(){
+          let msg="Hello World! I'm inside of a function"
+          console.log(msg);
+        }
+        console.log(msg);
+
+        let msg1= 'This a global variable';
+        function displayMSg1(){
+        console.log('function message ${msg1}')
+        }
+        console.log(`After function ${msg1}`)
+
+        //example 2
+        var fullMoon= true;
+        var species='human'
+        if (fullMoon){
+          var species='werewolf';
+          console.log('lupin is currently a ' + species);
+        }
+        console.log("lupin is outside the if-statement and is "+species)
+
+        const sum=function(num1,num2){
+          return num1+num2;
+        }
+         let square= function(num){
+           return Math.pow(num,2);
+         }
+
+
+         function rolldice(){
+           const roll=Math.floor(Math.random()*6+1)
+           return roll
+         }
+         function callTwice(dice){
+           console.log(dice());
+           console.log(dice());
+         }
+
+         function makebetween(min,max){
+           return function(num){
+             return num>= min && num<=min
+           }
+         }
+
+
+
+
+         const myMath={
+           square:function(num){return num*num},
+           double:function(num){return num*2}
+         }
+// use myMath.sqaure(x) to use function//
+
+const sqaure={
+  area(side){return side*side},
+  perimeter(side){side*4}
+}
+const cat={
+  name:'Mickey',
+  color:'White with black spots',
+  breed:'unkown',
+  meow(){console.log('${this.name}+meow meow')}
+}
+const hen={
+  name:'Helen'
+  eggCount:0,
+  layanEgg(){this.eggcount++;return'EGG! Egg count is ${eggCount}'}
+}
+//try and catch
+let hello='hey there!'
+try {
+  hello.toUpperCase()
+} catch{
+  console.log('Error')
+
+} finally {
+  console.log('after trycatch')
+}
+
+
+function yell(){
+try {
+  console.log(message.toUpperCase().repeat(3)
+} catch (e) {
+console.log('Please pass a string next time!')
+}
+}
+
+//example 12
+console.log('example 12 Spread!')
+let nums=[-9,20,-13,8,6]
+let greatest= Math.max(6,-1,7,-10,5)
+let lowest=Math.min(6,-1,7,-10,5)
+////Use Math.min(....numms) to find the max in an iterable array
+
+let comArray=[...array...]
+
+
+
+
+
+
+
+
+      </script>
+  </body>
+</html>

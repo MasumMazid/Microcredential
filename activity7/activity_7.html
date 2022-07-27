@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+var i=0;
+num=prompt("Enter a number between 1 and 10.");
+var mix=[];
+
+while(i==0){
+if(num>0 && num<11){
+i=1;
+mix.push(num);
+}
+
+else if (num>10){
+num=prompt('You have entered ' + num+ " ,a number greater than ten, enter a number less than 10")
+mix.push(num);
+}
+
+else if(num<1){
+num=prompt('You have entered ' + num+ " ,a number less than one, enter a number greater than one")
+mix.push(num);
+}
+
+else{
+num=prompt('You have entered ' + num+ " ,which is a string, enter a number from 1 to ten.")
+mix.push(num);
+}
+}
++console.log('You have entered '+num);
+for (let i = 0; i < mix.length; i++) {
+  +console.log("The value of entered number is now: " + mix[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>

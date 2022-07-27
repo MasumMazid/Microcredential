@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      checkName();
+      checkNum();
+      function checkName() {
+        var x=0
+        do{
+        var a=prompt("Enter a valid name NOW");
+        if(a===null){
+        +console.log("You forgot to enter a name. Enter a name again  NOW : ");
+        }
+        else if (a+1>1) {
+        +console.log(a+" is invalid! Enter a name again NOW : .");
+        }
+        else if (a==='') {
+          +console.log("You forgot to enter a name. Enter a name again  NOW : ");
+        }
+        else{
+        +console.log("Welcome "+ a.toUpperCase()+" to the class!");
+        x++
+        }
+      } while (x===0);
+    }
+
+    function checkNum() {
+      var y=0
+      do{
+      var c= prompt("Enter a number NOW");
+      if (c%2==0){
+      return true
+      y++
+      }
+      else if(c%2==1){
+      return false
+      y++
+      }
+      else if (c==='') {
+      +console.log("You forgot to enter a number. Enter a number  NOW : ");
+      }
+      else{
+      console.log("You have entered a non number, please enter a number");
+      }
+      }while(y===0);
+      }
+
+      function lottery(){
+        let x= prompt("How many times would you like to play the lottery?")
+
+        for(let c= 0; c<x; c++){
+        {
+        var numms;
+        numms=[];
+        for(let counter = 0; counter<=4; counter++){
+        numms[counter]=  Math.floor(Math.random() * 101);
+      }
+      return numms;
+    }
+      }
+    }
+
+
+
+
+
+      </script>
+
+ <p>M</p>
+
+
+
+  </body>
+</html>
