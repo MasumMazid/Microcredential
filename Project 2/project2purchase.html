@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form onsubmit="sendemail(); reset();">
+    <div class="checkout">
+      <h1>THANK YOU FOR YOUR CHOOSING A BOAT:Checkout Form</h1>
+
+        <h3>Please fill out ares below</h3>
+        <input type="text" name="" value="" placeholder="Your name" id="name">
+        <br>
+        <input type="email" name="" value="" placeholder="Your email" id="email">
+        <br>
+        <div class="dropdown">
+      <button class="dropbtn">Pick the boat You want</button>
+      <div class="dropdown-content">
+        <a href="#">Lomac 520</a>
+        <a href="#">Yachmaster Cruiser-T 2020</a>
+        <a href="#">Model T rider</a>
+        <a href="#">Santa Explorer 1996</a>
+        <a href="#">Kayaks</a>
+        <a href="#">ORO JACKSON</a>
+        <a href="#">Deluxe Sunny Pleasure World Cruiser 2011</a>
+        <a href="#">Elric</a>
+        <a href="#"></a>
+      </div>
+        <br>
+        <input type="text" name="" value="CreditCard" placeholder="CreditCard">
+        <button type="button" name="button" onclick="sendemail()">BUY</button>
+    </div>
+    </form>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script>
+      function sendemail(){
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "BoatyBoat123@gmail.com",
+      Password : "BoatyBoat123!",
+      To : document.getElementById("email").value,
+      From : "BoatyBoat123@gmail.com"
+      Subject : "Thank You for Your Boat Purchase",
+      Body : "Your Purchase:"+document.getElementById('name').value+"<br> Thank you so much for you purchase"
+      +"Your total is"+"<br>"+document.getElementsByClassName('Boat')
+      })
+      }
+    </script>
+  </body>
+</html>
