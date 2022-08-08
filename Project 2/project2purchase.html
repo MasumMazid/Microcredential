@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body>
+    <link rel="stylesheet" href="project2purchase.css">
     <form onsubmit="sendemail(); reset();">
     <div class="checkout">
       <h1>THANK YOU FOR YOUR CHOOSING A BOAT:Checkout Form</h1>
@@ -17,18 +18,18 @@
         <div class="dropdown">
       <button class="dropbtn">Pick the boat You want</button>
       <div class="dropdown-content">
-        <a href="#">Lomac 520</a>
-        <a href="#">Yachmaster Cruiser-T 2020</a>
-        <a href="#">Model T rider</a>
-        <a href="#">Santa Explorer 1996</a>
-        <a href="#">Kayaks</a>
-        <a href="#">ORO JACKSON</a>
-        <a href="#">Deluxe Sunny Pleasure World Cruiser 2011</a>
-        <a href="#">Elric</a>
+        <a href="#">Lomac 520:$750</a>
+        <a href="#">Yachmaster Cruiser-T 2020:$8934890</a>
+        <a href="#">Model T rider:$49450</a>
+        <a href="#">Santa Explorer 1996:$71350</a>
+        <a href="#">Kayaks:$3110</a>
+        <a href="#">ORO JACKSON:$3450</a>
+        <a href="#">Deluxe Sunny Pleasure World Cruiser 2011:$7150</a>
+        <a href="#">Elric:$1130</a>
         <a href="#"></a>
       </div>
         <br>
-        <input type="text" name="" value="CreditCard" placeholder="CreditCard">
+        <input type="text" name="" id="CreditCard" placeholder="CreditCard">
         <button type="button" name="button" onclick="sendemail()">BUY</button>
     </div>
     </form>
@@ -36,17 +37,12 @@
 </script>
     <script>
       function sendemail(){
-      Email.send({
-      Host : "smtp.gmail.com",
-      Username : "BoatyBoat123@gmail.com",
-      Password : "BoatyBoat123!",
-      To : document.getElementById("email").value,
-      From : "BoatyBoat123@gmail.com"
-      Subject : "Thank You for Your Boat Purchase",
-      Body : "Your Purchase:"+document.getElementById('name').value+"<br> Thank you so much for you purchase"
-      +"Your total is"+"<br>"+document.getElementsByClassName('Boat')
-      })
+        let names=document.getElementById('name')
+        let mails=document.getElementById('email')
+        let cardnumber=document.getElementById('email')
+
       }
+      let random = Math.floor(Math.random() * 10000000000);
     </script>
   </body>
 </html>
