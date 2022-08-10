@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="project2purchase.css" action="Bought.html">
+    <form  action="Bought.html" method="GET">
+      <div class="dropdown">
+    <button class="dropbtn">Pick the boat You want</button>
+    <div class="dropdown-content">
+      <button type="button" name="button" id="lomac"> Lomac 520:$750</button>
+      <button type="button" name="button" id="yach">Yachmaster Cruiser-T 2020:$8934890</button>
+      <button type="button" name="button" id="model">Model T rider:$49450</button>
+      <button type="button" name="button" id="santa">Santa Explorer 1996:$71350</button>
+      <button type="button" name="button" id="kayak">Kayaks:$3110</button>
+      <button type="button" name="button" id="oro">ORO JACKSON:$3450</button>
+      <button type="button" name="button" id="sunny">Deluxe Sunny Pleasure World Cruiser 2011:$777150</button>
+      <button type="button" name="button" id="elric">  Elric:$1130</button>
+    </div>
+    <div class="checkout">
+      <h1>THANK YOU FOR YOUR CHOOSING A BOAT:Checkout Form</h1>
+        <h3>Please fill out areas below</h3>
+        <input type="name" name="name" value="" placeholder="Your name" id="name">
+        <br>
+        <input type="email" name="email" value="" placeholder="Your email" id="email">
+        <br>
+        <input type="text" name="Creditcard" id="CreditCard" placeholder="CreditCard">
+        <br>
+        <br>
+        <br>
+        <br>
+        <b >TOTAL PRICE:</b>
+        <b style="font-weight:30px"></b>
+        <b id="finalprice" style="color:blue"></b>
+        <br>
+        <br>
+        <br><br><br>
+        <input type="price" name="price" value="" placeholder="Enter the correct price to confirm you purchase">
+        <br>
+        <div class="BUYBUTTON" style="textalign:right; padding:100px;">
+            <button  class="buybtn">BUY</button>
+        </div>
+
+    </div>
+    </form>
+    <script>
+
+      function buyemail(){
+      let names=document.getElementById('name')
+      let mails=document.getElementById('email')
+      let cardnumber=document.getElementById('PRICE')
+      }
+
+      let btn7=document.getElementById('sunny')
+
+      document.getElementById('lomac').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '$825.32';
+      }
+      document.getElementById('yach').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '$100000000';
+      }
+      document.getElementById('model').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '6275.32';
+      }
+      document.getElementById('santa').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '8999.52';
+      }
+      document.getElementById('kayak').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '3475.31';
+      }
+      document.getElementById('oro').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '4312.38';
+      }
+      document.getElementById('sunny').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '85320.55';
+      }
+      document.getElementById('elric').onclick = function() {
+      document.getElementById('finalprice').innerHTML = '1254.55';
+      }
+
+    </script>
+  </body>
+</html>

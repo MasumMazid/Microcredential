@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:Lightblue">
+  <b>THANK YOU FOR YOUR PURCHASE   <p id="firstname"></p></b>
+  <b>We have sent an email to you at: <p id="email"></p></b>
+  <b>And have charged your cardnumber: <p id="CC"></p></b>
+  <br>
+  <b></b>
+  <b>You snagged the last one at only:</b>
+  <br>
+  <b>$</b> <b id="price"></b>
+  <br>
+<b>Your order number is:</b>
+<br>
+<p id="demo"></p>
+<b style="color:red;font-size:30px;">If everthing is correct we will ship to you soon</b>
+<script>
+document.getElementById('demo').innerHTML = (Math.floor(Math.random() * 10000000));
+let stuff=window.location.search;
+let stuff2=stuff.split("?name=");
+let stuff3=stuff2[1].split("&email=");
+document.getElementById("firstname").innerHTML=stuff3[0];
+let stuff4=stuff3[1].split("&Creditcard=");
+let stuff41=stuff4[0];
+let stuff42=stuff41.replace('%40','@');
+document.getElementById("email").innerHTML=stuff42;
+let stuff5=stuff4[1].split("&");
+document.getElementById('CC').innerHTML=stuff5[0];
+let stuff6=stuff4[1].split("price=");
+document.getElementById('price').innerHTML=stuff6[1];
+
+//document.getElementById("write").innerHTML = window.location.search;
+
+</script>
+</body>
+
+</html>

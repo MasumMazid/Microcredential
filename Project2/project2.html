@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <header class="head">
+
+  </header>
+  <body>
+<link rel="stylesheet" href="project2.css">
+
+
+<figure>
+  <div class="animation1div">
+    <img src="boatpng.png" alt="simpleboat" class="boatanimation">
+    <img src="waves.jpg" class="waves">
+    <img src="dusk.jpg" class="dusk">
+  </div>
+</figure>
+<nav class="navbar1">
+<ul class="navbar1">
+  <li class="navbar11"> <button id="help">LET US HELP YOU CHOOSE A MODEL</button></li>
+
+  <li class="navbar11">
+    <div class="dropdown">
+  <button class="dropbtn">LEARN MORE ABOUT OUR MODELS</button>
+  <div class="dropdown-content">
+    <a href="#">Lomac 520</a>
+    <a href="#">Yachmaster Cruiser-T 2020</a>
+    <a href="#">Model T rider</a>
+    <a href="#">Santa Explorer 1996</a>
+    <a href="#">Kayaks</a>
+    <a href="#">ORO JACKSON</a>
+    <a href="#">Deluxe Sunny Pleasure World Cruiser 2011</a>
+    <a href="#">Elric</a>
+    <a href="#"></a>
+  </div>
+</div></li>
+
+  <li class="navbar11"> <a href = "mailto: boatyboat@gmail.com" class="navbar11">SEND US AN EMAIL</a></a></li>
+  <li class="navbar11"> <a href="project2purchase.html">BUY NOW</a></li>
+</ul>
+</nav>
+<h2>Boats in Stock</h2>
+  <figure>
+<div class="row">
+  <div class="bloc">
+  <img src="b1.jpg" class="boatpics">
+  <figcaption class="boatfig">Lomac 520</figcaption>
+  </div>
+
+  <div class="">
+    <img src="b3.jpg" class="boatpics">
+    <figcaption class="boatfig">Model T rider</figcaption>
+  </div>
+  <div class="">
+    <img src="b4.jpg" class="boatpics">
+    <figcaption class="boatfig">Yachmaster Cruiser-T 2020</figcaption>
+  </div>
+  <div class="">
+    <img src="b5.jpg" class="boatpics">
+    <figcaption class="boatfig">Santa Explorer 1996</figcaption>
+  </div>
+  <div class="">
+    <img src="sunny.jpg" class="boatpics">
+    <figcaption class="boatfig">Deluxe Sunny Pleasure World Cruiser 2011</figcaption>
+  </div>
+  <div class="">
+    <img src="kayak.jpg" class="boatpics">
+    <figcaption class="boatfig">Kayaks</figcaption>
+  </div>
+  <div class="">
+    <img src="oro.jpg" class="boatpics">
+    <figcaption class="boatfig">THE ORO JACKSON</figcaption>
+  </div>
+
+
+
+</div>
+
+<div class="row2">
+  <div class="textstuffs">
+    <img src="lomacd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="modeltd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="yachmasterd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="Santad.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="Sunnyd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="kayakd.jpg" class="text">
+  </div>
+  <div class="textstuffs">
+    <img src="orod.jpg" class="text">
+  </div>
+</div>
+
+<div id="helpstuff" class="helpstuff">
+<div class="helptab" style="z-index:10">
+<div class="home">
+<a href="project2.html" class="home">  <button type="button" name="button" class="home">HOME</button></a>
+</div>
+<div class="inputs">
+
+<form id="forminputs" method="post">
+  <br>
+  <br>
+  <b>Finally tell us how the minimum speed you would like it to go</b>
+  <input type="text"value="" class="speedinput">
+  <br>
+  <br>
+    <button type="button" name="button" class="chooseboat" onclick="findboats()">Get all available boats</button>
+    <input type="reset">
+</div>
+</form>
+<div class="result">
+<p class="resultinfo"></p>
+<br>
+<p class="boatsthatarefound" id="boatafford"></p>
+</div>
+</div>
+</div>
+
+<script>
+
+var modal = document.getElementById("helpstuff");
+var btn = document.getElementById("help");
+btn.onclick = function() {
+modal.style.display = "block";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+const price1=document.getElementsByClassName('priceinput');
+const color1=document.getElementsByClassName('colorinput');
+const speed1=document.getElementsByClassName('speedinput');
+const boatbtn=document.getElementsByClassName('buy');
+const findboat=document.getElementsByClassName('chooseboat')
+const foundboats=document.getElementsByClassName('boatsthatarefound')
+function findboats(){
+getspeed()
+document.getElementById('boatafford').innerHTML= 'The boats that have atleast that speed are:  <br>'+boatspeed
+}
+
+
+</script>
+<script type="text/javascript" src="project2.js">
+</script>
+  </body>
+</html>
